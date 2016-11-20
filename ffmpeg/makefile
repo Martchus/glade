@@ -1,7 +1,7 @@
 .RECIPEPREFIX +=
 
 /tmp/ffmpeg/ffmpeg: fdk-aac x264 diffutils
-  ./make.sh
+  ./install.sh
 
 fdk-aac:
   $(MAKE) -C ../fdk-aac
