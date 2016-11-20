@@ -3,7 +3,6 @@
 # 1. FFmpeg
 # 2. static
 # 3. CMAKE_C_COMPILER environment?
-# cygport
 
 # c++utilities
 git clone git://github.com/Martchus/cpp-utilities
