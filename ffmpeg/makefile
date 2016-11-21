@@ -1,13 +1,11 @@
 .RECIPEPREFIX +=
+J = /usr/x86_64-w64-mingw32/sys-root/mingw/lib
 
-/tmp/ffmpeg/ffmpeg: fdk-aac x264 diffutils
+/tmp/ffmpeg/ffmpeg: $(J)/libfdk-aac.a $(J)/libx264.a
   ./install.sh
 
-fdk-aac:
+$(J)/libfdk-aac.a:
   $(MAKE) -C ../fdk-aac
 
-x264:
+$(J)/libx264.a:
   $(MAKE) -C ../x264
-
-diffutils:
-  sage install diffutils

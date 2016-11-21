@@ -1,6 +1,7 @@
 .RECIPEPREFIX +=
+J = /usr/x86_64-w64-mingw32/sys-root/mingw/lib
 
-/tmp/fdk-aac/.libs/libfdk-aac.a: /bin/autoreconf /bin/libtool \
+$(J)/libfdk-aac.a: /bin/autoreconf /bin/libtool \
 /bin/x86_64-w64-mingw32-g++ /bin/git
   ./install.sh
 

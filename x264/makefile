@@ -1,6 +1,7 @@
 .RECIPEPREFIX +=
+J = /usr/x86_64-w64-mingw32/sys-root/mingw/lib
 
-/tmp/x264/libx264.a: /bin/x86_64-w64-mingw32-gcc /bin/yasm /bin/git
+$(J)/libx264.a: /bin/x86_64-w64-mingw32-gcc /bin/yasm /bin/git
   ./install.sh
 
 /bin/x86_64-w64-mingw32-gcc:

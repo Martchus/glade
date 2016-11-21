@@ -8,4 +8,4 @@ cmake -DCMAKE_AR=/bin/x86_64-w64-mingw32-ar \
 -DCMAKE_FIND_ROOT_PATH=/usr/x86_64-w64-mingw32/sys-root/mingw \
 -DCMAKE_INSTALL_PREFIX=/usr/x86_64-w64-mingw32/sys-root/mingw \
 -DDISABLE_SHARED_LIBS=1 -DENABLE_STATIC_LIBS=1
-make install
+make --jobs=4 install
