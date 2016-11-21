@@ -1,8 +1,6 @@
 #!/bin/dash -e
-if [ ! -d /tmp/cpp-utilities ]
-then
-  git clone git://github.com/Martchus/cpp-utilities /tmp/cpp-utilities
-fi
+[ -d /tmp/cpp-utilities ] ||
+git clone git://github.com/Martchus/cpp-utilities /tmp/cpp-utilities
 cd /tmp/cpp-utilities
 cmake -DCMAKE_AR=/bin/x86_64-w64-mingw32-ar \
 -DCMAKE_C_COMPILER=x86_64-w64-mingw32-gcc \

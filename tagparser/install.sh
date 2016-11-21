@@ -1,4 +1,5 @@
 #!/bin/dash -e
+[ -d /tmp/tagparser ] ||
 git clone git://github.com/Martchus/tagparser /tmp/tagparser
 cd /tmp/tagparser
 cmake -DCMAKE_AR=/bin/x86_64-w64-mingw32-ar \
