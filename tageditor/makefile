@@ -6,3 +6,6 @@ J = /usr/x86_64-w64-mingw32/sys-root/mingw/lib
 
 $(J)/libtagparser.a:
   $(MAKE) -C ../tagparser
+
+clean:
+  git -C /tmp/tageditor clean -fdx
