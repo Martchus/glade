@@ -1,4 +1,5 @@
 #!/bin/dash -e
+rm -f /usr/x86_64-w64-mingw32/sys-root/mingw/lib/libpthread.dll.a
 [ -d /tmp/tageditor ] ||
 git clone git://github.com/Martchus/tageditor /tmp/tageditor
 cd /tmp/tageditor
